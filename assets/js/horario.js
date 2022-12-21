@@ -7,7 +7,7 @@ verficarHora();
 const time = setInterval(verficarHora, 60000);
 
 function verficarHora() {
-  if (hours >= 22 || hours < 07 || dia === 7) {
+  if (hours >= 18 || hours < 07 || dia === 7) {
     bullet.classList.add("fechado");
   } else {
     bullet.classList.add("aberto");
