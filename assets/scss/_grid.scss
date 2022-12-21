@@ -29,16 +29,6 @@ $s-device: 480px;
   }
 }
 
-p {
-  color: blue;
-  @include d(m) {
-    color: yellow;
-  }
-  @include d(s) {
-    color: red;
-  }
-}
-
 //Função do grid
 @function grid($col, $offset: false) {
   $width: calc($col / $cols) * 100%;
@@ -112,7 +102,6 @@ p {
   @include clearfix;
 }
 .container {
-  background: rgba(0, 0, 0, 0.4);
   @include container;
 }
 @mixin row {
@@ -130,7 +119,6 @@ p {
 }
 
 div {
-  background: rgba(0, 0, 0, 0.7);
   min-height: 50px !important;
   margin-bottom: 10px;
 }
